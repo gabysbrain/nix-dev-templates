@@ -26,7 +26,7 @@
         Change this value ({major}.{min}) to
         update the Python virtual-environment
         version. When you do this, make sure
-        to delete the `.venv` directory to
+        to delete the `venv` directory to
         have the hook rebuild it for the new
         version, since it won't overwrite an
         existing one. After this, reload the
@@ -54,7 +54,7 @@
         in
         {
           default = pkgs.mkShellNoCC {
-            venvDir = ".venv";
+            venvDir = "venv";
 
             postShellHook = ''
               venvVersionWarn() {
